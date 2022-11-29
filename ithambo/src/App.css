@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navigation */
+
+.nav{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
+
+.nav a{
+  color: white;
+}
+
+.logo{
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+}
+
+.hamburger{
+  color: white;
+  font-size: 35px;
+  display: none;
+}
+
+.nav-bar ul{
+  display: flex;
+}
+
+.nav-bar ul li{
+  list-style: none;
+}
+
+.nav-bar ul li a{
+  display: block;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  transition: 0.3s;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nav-bar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+
+/* Footer */
+.footer{
+  height: 90px;
+  width: 100vw;
+  background-color: rgb(31, 31, 31);
+  position: absolute;
+}
+
+/* Responsive Menu */
+.responsive-nav{
+  position: absolute;
+    top: 80px;
+    left: 0;
+    height: 400px;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+}
+
+.responsive-nav ul li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.responsive-nav ul{
+  display: block;
+  margin: 80px auto 0 auto;
+  width: fit-content;
+  text-align: center;
+  transition: 0.5px
+}
+
+.responsive-nav ul li a{
+
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.responsive-nav ul li a:hover{
+  color: black;
+  background-color: white;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-bar{
+    display: none;
+  }
+
+}
+
+
+/* Home Page */
+
+.hero{
+  background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 100vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.slide{
+  height: 100vh;
+  display: flex;
+  flex-direction: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.slide img{
+  display: inline-block;
+  height: 400px;
+  width: 50%;
+}
+
+.product-description{
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  width: 40%;
+}
+
+/* Slide container */
+
+.inner{
+  width: 60%;
+  margin: auto;
+}
+
