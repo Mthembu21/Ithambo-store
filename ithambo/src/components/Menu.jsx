@@ -20,7 +20,7 @@ const Menu = () => {
 
       <div className= "nav-bar">
         <ul>
-          <li>
+          <li onClick= {() => navigate("/")}>
             <a>Home</a>
           </li>
           <li onClick= {() => navigate("/catalog")}>
@@ -40,7 +40,7 @@ const Menu = () => {
 
       <div className= "responsive-nav" style= {{display: `${value}`}}>
         <ul>
-          <li>
+          <li onClick= {() => navigate("/")}>
             <a>Home</a>
           </li>
           <li onClick= {() => navigate("/catalog")}>
