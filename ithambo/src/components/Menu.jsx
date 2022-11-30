@@ -1,10 +1,12 @@
 import React, {useState} from "react";
+import {useNavigate} from "react-router-dom"
 import { HiOutlineMenu } from "react-icons/hi";
 
 const Menu = () => {
 
   const [show, setShow] = useState(false)
   const [value, setValue] = useState("none")
+  const navigate = useNavigate()
 
   const showMenu = () => {
     setShow(prev => !prev)
@@ -21,7 +23,7 @@ const Menu = () => {
           <li>
             <a>Home</a>
           </li>
-          <li>
+          <li onClick= {() => navigate("/catalog")}>
             <a>Catalog</a>
           </li>
           <li>
@@ -41,7 +43,7 @@ const Menu = () => {
           <li>
             <a>Home</a>
           </li>
-          <li>
+          <li onClick= {() => navigate("/catalog")}>
             <a>Catalog</a>
           </li>
           <li>

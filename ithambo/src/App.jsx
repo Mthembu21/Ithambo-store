@@ -6,6 +6,7 @@ import Menu from "./components/Menu"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import AdminDash from "./pages/AdminDash"
+import Catalog from "./pages/Catalog"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
           <Route index element={<Home />} />
           <Route path="admin" element={<AdminDash />} />
+          <Route path="catalog" element={<Catalog />} />
           {/* <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />  */}
       </Routes>
