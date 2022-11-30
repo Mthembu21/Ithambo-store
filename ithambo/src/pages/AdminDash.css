@@ -1,0 +1,56 @@
+.admin{
+    margin-top: 80px;
+    width: 100%;
+    padding: 20px;
+    padding: 15px;
+}
+
+.dash-container{
+    width: 70%;
+    height: 70vh;
+    margin: 5% auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(31, 31, 31);
+}
+
+.header h1{
+    position: absolute;
+    margin: 1rem;
+    color: white;
+}
+
+.click-items{
+    margin: 1.5rem;
+    cursor: pointer;
+    height: 65px;
+    border-radius: 40px;
+    transition: .4s ease-out;
+}
+
+
+
+.click-items :before{
+    border-radius: 40px;
+    transform-origin: 0 bottom 0;
+	transform: scaleY(0);
+		
+}
+.click-items :hover{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    height: 65px;
+    padding: 10px;
+}
+
+/* Responsive stuff */
+
+@media only screen and (max-width: 500px){
+    .dash-container{
+        width: 100%;
+    }
+}

@@ -5,6 +5,7 @@ import './App.css'
 import Menu from "./components/Menu"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
+import AdminDash from "./pages/AdminDash"
 
 function App() {
 
@@ -14,9 +15,9 @@ function App() {
       <Menu/>
       <Routes>
           <Route index element={<Home />} />
-          {/* <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
+          <Route path="admin" element={<AdminDash />} />
+          {/* <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />  */}
       </Routes>
       <Footer/>
     </BrowserRouter>
