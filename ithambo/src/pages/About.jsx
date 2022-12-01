@@ -6,13 +6,9 @@ function About() {
 
   return (
     <div>
-        {/* <div className='about'>
-       
-        </div> */}
         <div className='flex-container'>
             <h3>About Ithambo Store</h3>
         </div>
-      
     </div>
   )
 }

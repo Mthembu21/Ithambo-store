@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import reactLogo from './assets/react.svg'
+import AppContextProvider from "./contexts/AppContext"
 import './App.css'
 import Menu from "./components/Menu"
 import Footer from "./components/Footer"
@@ -10,10 +10,12 @@ import Catalog from "./pages/Catalog"
 import About from './pages/About';
 import Contact from './pages/Contact';
 
+
 function App() {
 
   return (
-    <div className="App">
+    <AppContextProvider>
+      <div className="App">
       <BrowserRouter>
       <Menu/>
       <Routes>
@@ -28,6 +30,7 @@ function App() {
       <Footer/>
     </BrowserRouter>
     </div>
+    </AppContextProvider>
   )
 }
 
