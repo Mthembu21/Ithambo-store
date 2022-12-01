@@ -1,0 +1,13 @@
+.about{
+    margin: 90px auto;
+    width: 100%;
+    color: black;
+}
+.flex-container{
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    display: flex;
+}

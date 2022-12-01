@@ -7,6 +7,8 @@ import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import AdminDash from "./pages/AdminDash"
 import Catalog from "./pages/Catalog"
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
           <Route path="catalog" element={<Catalog />} />
           {/* <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />  */}
+          <Route path ="About" element ={<About/>}></Route>
+          <Route path ="Contact" element ={<Contact/>}></Route>
       </Routes>
       <Footer/>
     </BrowserRouter>

@@ -9,6 +9,7 @@ const Catalog = () => {
       <h1>Catalog</h1>
 
       <div className="flex-container">
+      
         <div className="catalog-container tools" onClick={navigate("/tools")}>
           <h2 id="overlay">Tools</h2>
         </div>

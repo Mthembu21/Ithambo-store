@@ -26,10 +26,10 @@ const Menu = () => {
           <li onClick= {() => navigate("/catalog")}>
             <a>Catalog</a>
           </li>
-          <li>
+          <li onClick={() => navigate("/About")}>
             <a>About</a>
           </li>
-          <li>
+          <li onClick={() => navigate("/Contact")}>
             <a>Contact</a>
           </li>
           <li>
