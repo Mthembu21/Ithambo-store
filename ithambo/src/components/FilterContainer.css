@@ -1,0 +1,28 @@
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 460px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px black solid;
+    background-color: transparent;
+    font-size: 1.1rem;
+}
+
+.sort select{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px black solid;
+    padding: 5px;
+}
+
+.sort select option{
+    font-size: 1.1rem;
+}
+
+.sort select option:hover{
+    background-color: black;
+    color: white;
+}

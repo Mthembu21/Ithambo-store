@@ -142,6 +142,7 @@
 }
 
 .slide img{
+  object-fit: cover;
   display: inline-block;
   height: 400px;
   width: 50%;

@@ -9,6 +9,7 @@ import AdminDash from "./pages/AdminDash"
 import Catalog from "./pages/Catalog"
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Products from './pages/Products';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <Routes>
           <Route index element={<Home />} />
           <Route path="admin" element={<AdminDash />} />
-          <Route path="catalog" element={<Catalog />} />
+          <Route path="catalog" element={<Products />} />
           {/* <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />  */}
           <Route path ="About" element ={<About/>}></Route>

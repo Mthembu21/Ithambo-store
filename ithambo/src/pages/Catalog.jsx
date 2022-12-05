@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Catalog.css";
 import SearchBar from "../components/SearchBar"
+import FilterContainer from "../components/FilterContainer"
 
 const Catalog = () => {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ const Catalog = () => {
     <div className="catalog">
       <h1>Catalog</h1>
       <SearchBar/>
+      <FilterContainer/>
 
       <div className="flex-container">
       
