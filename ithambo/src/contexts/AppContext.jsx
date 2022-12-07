@@ -1,3 +1,6 @@
+//Context for the Grahical User Interface
+//Contains state values for displaying the responsive menu etc...
+
 import React, {createContext, useState} from "react"
 
 export const AppContext = createContext()
