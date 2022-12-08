@@ -11,13 +11,17 @@ const AppContextProvider = (props) => {
     const [filterCategory, setFilterCategory] = useState("")
     const [sortBy, setSortBy] = useState("")
 
+    //Login and sign up input states
+    const [emailInput, setEmailInput] = useState("")
+    const [passwordInput, setPasswordInput] = useState("")
+
     const SearchProducts = () => {
         console.log(searchTerm)
     }
 
 
     return(
-        <AppContext.Provider value = {{searchTerm, setSearchTerm, SearchProducts, filterCategory, setFilterCategory, sortBy, setSortBy}}>
+        <AppContext.Provider value = {{searchTerm, setSearchTerm, SearchProducts, filterCategory, setFilterCategory, sortBy, setSortBy, emailInput, setEmailInput, passwordInput, setPasswordInput}}>
             {props.children}
         </AppContext.Provider>
     )
