@@ -11,7 +11,7 @@ const AppContextProvider = (props) => {
     const [filterCategory, setFilterCategory] = useState("")
     const [sortBy, setSortBy] = useState("")
 
-    //Login and sign up input states
+    //Login and sign up states
     const [emailInput, setEmailInput] = useState("")
     const [passwordInput, setPasswordInput] = useState("")
 

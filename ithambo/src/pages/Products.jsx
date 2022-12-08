@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import FilterContainer from "../components/FilterContainer";
 import Searchbar from "../components/SearchBar";
+import LoginForm from "../components/LoginForm";
 import Heading from "../components/Heading";
 import { products } from "../assets/data";
 import "./Products.css";
@@ -22,6 +23,8 @@ const Products = () => {
           <ProductCard img={item.img} price={item.price} title={item.name} />
         ))}
       </div>
+
+      <LoginForm/>
     </div>
   );
 };
