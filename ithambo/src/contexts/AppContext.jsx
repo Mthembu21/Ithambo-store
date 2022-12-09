@@ -11,13 +11,30 @@ const AppContextProvider = (props) => {
     const [filterCategory, setFilterCategory] = useState("")
     const [sortBy, setSortBy] = useState("")
 
+    //Login and sign up states
+    const [emailInput, setEmailInput] = useState("")
+    const [passwordInput, setPasswordInput] = useState("")
+
     const SearchProducts = () => {
         console.log(searchTerm)
     }
 
+    //Hide and show form
+    const [displayForm, setDisplayForm] = useState("none")
+
+    const showForm = () => {
+        setDisplayForm("block")
+        console.log(displayForm)
+    }
+
+    const hideForm = () => {
+        setDisplayForm("none")
+        console.log(displayForm)
+    }
+
 
     return(
-        <AppContext.Provider value = {{searchTerm, setSearchTerm, SearchProducts, filterCategory, setFilterCategory, sortBy, setSortBy}}>
+        <AppContext.Provider value = {{showForm, hideForm, searchTerm, setSearchTerm, SearchProducts, filterCategory, setFilterCategory, sortBy, setSortBy, emailInput, setEmailInput, passwordInput, setPasswordInput, displayForm}}>
             {props.children}
         </AppContext.Provider>
     )

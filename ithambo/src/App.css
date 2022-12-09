@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
 }
@@ -34,6 +34,12 @@
   color: white;
   font-size: 35px;
   display: none;
+}
+
+.close{
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .nav-bar ul{
@@ -69,7 +75,7 @@
 
 /* Responsive Menu */
 .responsive-nav{
-  position: absolute;
+  position: fixed;
     top: 80px;
     left: 0;
     height: 400px;
@@ -108,7 +114,7 @@
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   .hamburger{
     display: block;
     cursor: pointer;

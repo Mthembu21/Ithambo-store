@@ -1,0 +1,32 @@
+.primary-btn{
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border-radius: 40px;
+    border: none;
+}
+
+.primary-btn:hover{
+    border: 2px solid rgb(31, 31, 31);
+    background-color: transparent;
+    color: rgb(31, 31, 31);
+}
+
+
+.secondary-btn{
+    width: 250px;
+    height: 45px;
+    padding: 10px;
+    border: 2px solid rgb(31, 31, 31);
+    background-color: transparent;
+    color: rgb(31, 31, 31);
+    border-radius: 40px;
+}
+
+.secondary-btn:hover{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
