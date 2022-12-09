@@ -19,6 +19,28 @@ const Menu = () => {
     setValue("none")
     setShow(true)
   }
+
+  const navigateHome = () => {
+    hideMenu()
+    navigate("/")
+  }
+
+  const navigateCatalog = () => {
+    hideMenu()
+    navigate("/catalog")
+  }
+
+  const navigateAbout = () => {
+    hideMenu()
+    navigate("/about")
+  }
+
+  const navigateContact = () => {
+    hideMenu()
+    navigate("/contact")
+  }
+
+
   return (
     <div className="nav">
       <div className="logo">Ithambo</div>
@@ -26,16 +48,16 @@ const Menu = () => {
 
       <div className= "nav-bar">
         <ul>
-          <li onClick= {() => navigate("/")}>
+          <li onClick= {navigateHome}>
             <a>Home</a>
           </li>
-          <li onClick= {() => navigate("/catalog")}>
+          <li onClick= {navigateCatalog}>
             <a>Catalog</a>
           </li>
-          <li onClick={() => navigate("/About")}>
+          <li onClick={navigateAbout}>
             <a>About</a>
           </li>
-          <li onClick={() => navigate("/Contact")}>
+          <li onClick={navigateContact}>
             <a>Contact</a>
           </li>
           <li>
@@ -49,16 +71,16 @@ const Menu = () => {
 
       <div className= "responsive-nav" style= {{display: `${value}`}}>
         <ul>
-          <li onClick= {() => navigate("/")}>
+        <li onClick= {navigateHome}>
             <a>Home</a>
           </li>
-          <li onClick= {() => navigate("/catalog")}>
+          <li onClick= {navigateCatalog}>
             <a>Catalog</a>
           </li>
-          <li>
+          <li onClick={navigateAbout}>
             <a>About</a>
           </li>
-          <li>
+          <li onClick={navigateContact}>
             <a>Contact</a>
           </li>
           <li>
