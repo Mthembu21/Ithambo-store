@@ -1,22 +1,28 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from 'react'
+import { AppContext } from "../contexts/AppContext";
 import {useNavigate} from "react-router-dom"
 import { HiOutlineMenu } from "react-icons/hi";
+import {IoClose} from "react-icons/io5"
 
 const Menu = () => {
-
-  const [show, setShow] = useState(false)
+  const {showForm, hideForm, displayForm} = useContext(AppContext);
+  const [show, setShow] = useState(true)
   const [value, setValue] = useState("none")
   const navigate = useNavigate()
 
   const showMenu = () => {
-    setShow(prev => !prev)
+    setValue("block")
+    setShow(false)
+  }
 
-    setValue(show ? "block" : "none")
+  const hideMenu = () => {
+    setValue("none")
+    setShow(true)
   }
   return (
     <div className="nav">
       <div className="logo">Ithambo</div>
-      <HiOutlineMenu className="hamburger" onClick= {showMenu} />
+      {show ? <HiOutlineMenu className="hamburger" onClick= {showMenu} /> : <IoClose className= "close" onClick={hideMenu}/>}
 
       <div className= "nav-bar">
         <ul>
@@ -34,6 +40,9 @@ const Menu = () => {
           </li>
           <li>
             <a>Cart</a>
+          </li>
+          <li onClick={showForm}>
+            <a>Login</a>
           </li>
         </ul>
       </div>
@@ -54,6 +63,9 @@ const Menu = () => {
           </li>
           <li>
             <a>Cart</a>
+          </li>
+          <li onClick={showForm}>
+            <a>Login</a>
           </li>
         </ul>
       </div>

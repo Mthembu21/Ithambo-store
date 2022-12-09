@@ -9,32 +9,32 @@
 
 .auth-form{
     position: absolute;
-    top: 12%;
+    top: 5%;
     left: 30%;
     width: 40%;
     border-radius: 10px;
-    background-color: grey;
-    height: 60vh;
+    background-color: white;
+    height: fit-content;
     margin: auto;
 }
 
 .form{
     margin: auto;
     width: 100%;
-    background-color: red;
 }
 
 .user-input input{
     width: 80%;
     height: 45px;
     padding: 10px;
-    border: 3px solid rgb(31, 31, 31);
+    border: 2px solid rgb(31, 31, 31);
     display: block;
     margin: auto;
 }
 
 label{
     display: block;
+    margin-left: 10%;
 }
 
 .icon{
@@ -42,4 +42,28 @@ label{
     position: absolute;
     top: 10px;
     right: 10px;
+
+}
+
+.block-1{
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    background-color: white;
+}
+
+.block-2{
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    background-color: grey;
+}
+
+button{
+    margin: 15px auto 15px;
+    display: block;
 }
