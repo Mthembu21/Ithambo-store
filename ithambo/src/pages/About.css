@@ -1,4 +1,4 @@
-.about{
+/* .about{
     margin: 90px auto;
     width: 100%;
     color: black;
@@ -10,4 +10,8 @@
     align-items: center;
     margin: auto;
     display: flex;
+} */
+.about-container{
+    height: 100vh;
+
 }
