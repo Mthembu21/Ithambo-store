@@ -4,6 +4,7 @@ import AppContextProvider from "./contexts/AppContext"
 import './App.css'
 import Menu from "./components/Menu"
 import Footer from "./components/Footer"
+import LoginForm from "./components/LoginForm"
 import Home from "./pages/Home"
 import AdminDash from "./pages/AdminDash"
 import Catalog from "./pages/Catalog"
@@ -19,6 +20,7 @@ function App() {
       <div className="App">
       <BrowserRouter>
       <Menu/>
+      <LoginForm/>
       <Routes>
           <Route index element={<Home />} />
           <Route path="admin" element={<AdminDash />} />

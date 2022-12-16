@@ -13,7 +13,7 @@ import PrimaryButton from "../components/PrimaryButton";
 const Products = () => {
   const navigate = useNavigate();
 
-  const {showForm, hideForm, displayForm} = useContext(AppContext);
+  const {showForm} = useContext(AppContext);
   return (
     <div className="products">
       <div className="filter-bar">
@@ -27,9 +27,6 @@ const Products = () => {
           <ProductCard img={item.img} price={item.price} title={item.name} />
         ))}
       </div>
-
-      <LoginForm/>
-      <PrimaryButton btnText= "Show form" function= {showForm}/>
     </div>
   );
 };

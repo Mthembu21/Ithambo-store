@@ -16,6 +16,7 @@
 
 
 .secondary-btn{
+    text-align: center;
     width: 250px;
     height: 45px;
     padding: 10px;
@@ -23,10 +24,18 @@
     background-color: transparent;
     color: rgb(31, 31, 31);
     border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .secondary-btn:hover{
     background-color: rgb(31, 31, 31);
     color: white;
+}
+
+.btn-icon{
+    font-size: 25px;
+    margin-right: 10px;
 }
 
