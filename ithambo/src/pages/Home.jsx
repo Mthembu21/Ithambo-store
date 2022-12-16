@@ -1,5 +1,6 @@
 import React from "react"
 import ProductSlider from "../components/ProductSlider"
+import FilterContainer from "../components/FilterContainer";
 
 const Home = () => {
     return(

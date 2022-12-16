@@ -9,13 +9,14 @@
 
 .auth-form{
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 30%;
     width: 40%;
     border-radius: 10px;
     background-color: white;
     height: fit-content;
     margin: auto;
+   
 }
 
 .form{

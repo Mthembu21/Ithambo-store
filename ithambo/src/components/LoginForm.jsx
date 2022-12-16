@@ -3,7 +3,7 @@ import { AppContext } from "../contexts/AppContext";
 import "./LoginForm.css";
 import PrimaryButton from "../components/PrimaryButton";
 import SecondaryBtn from "../components/SecondaryBtn";
-import { AiFillGoogleCircle } from "react-icons/ai";
+import { FcGoogle } from "react-icons/fc";
 import { IoClose } from "react-icons/io5";
 
 const LoginForm = () => {
@@ -77,7 +77,7 @@ const LoginForm = () => {
             <PrimaryButton btnText="Login" />
             <SecondaryBtn
               btnText="Login with google acccount"
-              icon={AiFillGoogleCircle}
+              icon={<FcGoogle className= "btn-icon"/>}
             />
           </>
         ) : (
@@ -141,7 +141,7 @@ const LoginForm = () => {
             <PrimaryButton btnText="Login" />
             <SecondaryBtn
               btnText="Login with google acccount"
-              icon={AiFillGoogleCircle}
+              icon={<FcGoogle className= "btn-icon"/>}
             />
           </>
         )}
